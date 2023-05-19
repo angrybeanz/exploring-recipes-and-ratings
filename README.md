@@ -48,6 +48,61 @@ Here, I conducted bivariate analysis on the variables rating and tags. I made a 
 
 This grouped table shows that average ratings for each tag. Notice that there is a unique tag for each tag item and the ratings vary from nan values to 5. I aggregated this column of ratings using the mean and not another aggregating function, because of the mean's central tendency nature. The median might've given me accurate results of the measure of central tendency as well, however a mean could best capture the skew of the ratings, if any.
 
+Here, the top 50 rows of the grouped table is shown for reference:
+
+| tags                |   average_ratings |
+|:--------------------|------------------:|
+| pot-roast           |           5       |
+| snacks-sweet        |           5       |
+| pork-crock-pot      |           5       |
+| pickeral            |           5       |
+| halloween-cakes     |           5       |
+| bass                |           5       |
+| beef-crock-pot      |           5       |
+| somalian            |           5       |
+| nepalese            |           5       |
+| sudanese            |           5       |
+| snacks-kid-friendly |           5       |
+| crock-pot-main-dish |           5       |
+| main-dish-beef      |           5       |
+| namibian            |           5       |
+| main-dish-chicken   |           5       |
+| congolese           |           5       |
+| breakfast-eggs      |           4.95833 |
+| eggs-breakfast      |           4.95833 |
+| halloween-cocktails |           4.95    |
+| whitefish           |           4.94444 |
+| angolan             |           4.92857 |
+| duck-breasts        |           4.89091 |
+| beef-organ-meats    |           4.88889 |
+| chutneys            |           4.87543 |
+| april-fools-day     |           4.86667 |
+| trout               |           4.85119 |
+| pork-loins-roast    |           4.83333 |
+| squid               |           4.83333 |
+| manicotti           |           4.82271 |
+| duck                |           4.81719 |
+| nigerian            |           4.8125  |
+| grapes              |           4.79006 |
+| czech               |           4.78935 |
+| smoker              |           4.78578 |
+| beijing             |           4.77778 |
+| korean              |           4.76871 |
+| dehydrator          |           4.76667 |
+| biscotti            |           4.76618 |
+| austrian            |           4.75904 |
+| british-columbian   |           4.75639 |
+| pakistani           |           4.75343 |
+| beef-liver          |           4.75    |
+| collard-greens      |           4.74838 |
+| simply-potatoes2    |           4.74294 |
+| rabbit              |           4.74231 |
+| hungarian           |           4.74197 |
+| papaya              |           4.74167 |
+| icelandic           |           4.73654 |
+| quiche              |           4.73611 |
+| macaroni-and-cheese |           4.73435 |
+
 ---
 
 ## Assessement of Missingness
