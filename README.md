@@ -1,5 +1,8 @@
 # exploring-recipes-and-ratings
 Thie is an exploratory data analysis project for DSC80 at UCSD.
+
+---
+
 ## Introduction
 My dataset is called recipes and ratings, which show different features regarding recipes and how users rate them. This dataset can give important insight about what users usually enjoy in a recipe and feedback about the types of recipes they like or dislike.
 
@@ -8,6 +11,8 @@ I am investigating this question: What tags are associated with the highest-rate
 This question could show what types of recipes are popular among users, and include other insights that involve reading the tags of popular recipes. From this, we can gather trends about whether certain tags of recipes (ie romantic recipes, under 60 minutes, low-fat recipes) correlate with popularity/higher ratings of the recipes. 
 
 The dataset ratings has 731927 rows and 5 columns- each row corresponds to an individual rating, and each row has the user_id, recipe_id, date, rating, and review. Here, the rating tells us how much the user liked the recipe, and reviews provides additional insights about how the user felt about the recipe. In the recipes dataset, there are 83782 rows and 12 columns, where each row is a recipe in the dataset. Each row has information about name, id, minutes, contributor_id, submitted, tags, nutrition, number of steps, description of steps, additional description, ingredients, and number of ingredients. Tags is most relevant to my analysis question, as I'm trying to find out how the tags on a recipe might influence or correlate to a user's review/rating. 
+
+---
 
 ## Cleaning and EDA
 I first merged the two datasets left on the recipe id, which exists as 'id' in recipes and 'recipe id' in ratings. This created a merged dataset that I used for the rest of the notebook. I then replaced all the 0 for ratings to np.nan. This is because some ratings of zero didn't necessarily indicate that the user gave a rating of 0, rather it was just unrated, and so in that case we want to count those ratings as missing values instead of actually 0.
@@ -43,9 +48,12 @@ Here, I conducted bivariate analysis on the variables rating and tags. I made a 
 
 This grouped table shows that average ratings for each tag. Notice that there is a unique tag for each tag item and the ratings vary from nan values to 5. I aggregated this column of ratings using the mean and not another aggregating function, because of the mean's central tendency nature. The median might've given me accurate results of the measure of central tendency as well, however a mean could best capture the skew of the ratings, if any.
 
+---
 
 ## Assessement of Missingness
 The column 'reviews' might be NMAR, because people who leave reviews may feel strongly either negatively or positively and be more inclined to take the time to write something out. On the other hand, people who have more neutral reviews may not feel super strongly and not write a review at all. It's possible to determine is this might be true by collecting additional data about how much time a user spent on that page, how many times they revisited, or other features that would show whether they had a particularly good or bad experience.
+
+---
 
 ## Hypothesis Testing
 My research question is: Is there a significant difference in average rating for recipes tagged as broccoli and recipes tagged as vegetables?
