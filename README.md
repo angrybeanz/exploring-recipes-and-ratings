@@ -19,9 +19,11 @@ Because I had two relevant columns that I wanted to do univariate analysis on, I
 
 <iframe src="assets/distribution_of_average_ratings.html" width=800 height=600 frameBorder=0></iframe>
 
+
 The 'Distribution of Average Ratings' is a histogram containing the distribution of the ratings, and the 4.75-5.249 bin ratings are way more prevalent than any other rating. This can be interpreted as users seem to give more 4-5 star ratings on recipes when they submit ratings, meaning they generally feel positively about the recipes. 
 
 <iframe src="assets/top_50_tags.html" width=800 height=600 frameBorder=0></iframe>
+
 
 The 'Top 50 Tags' shows the top 50 most tagged tags. Here, the merged dataframe was exploded in order to have a row for every individual tag. Preparation, course, dietary, and occasion seem to be the most commonly tagged, perhaps because of the broadness of the term that may apply well to most recipes. You can see that more specific terms like chicken and fruit are less commonly tagged, as not all recipes would have chicken or fruit as an ingredient. 
 
@@ -30,6 +32,7 @@ The 'Top 50 Tags' shows the top 50 most tagged tags. Here, the merged dataframe 
 ### Bivariate Analysis
 
 <iframe src="top_9_tags_average_rating.html" width=800 height=600 frameBorder=0></iframe>
+
 
 Here, I conducted bivariate analysis on the variables rating and tags. I made a boxplot to show the averages and quartiles, we well as minimum/maximum of each tag's ratings. The upper quartile and median seem to all gravitate towards 5 star ratings, which is consistent with the aforementioned distribution of average ratings. We see that the minimum of each rating seems to trend towards the very low star ratings, however most of the lower quartile hovers around a neutral rating of 3. This can be interpreted as most tags being in well rated recipes, but the spread of ratings across the tags in the lower 50% clustered around neutral ratings, which less extreme ratings like 1. Users lean towards giving good or neutral ratings, with the occasionally strong negative rating. Because of file size limitations, I am unable to upload a top 50 tags plot, however they can be found in my notebook, with similar results as the top 9 plot shown here.
 
