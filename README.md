@@ -22,7 +22,7 @@ For the purposes of this dataset, I also wanted to see the average rating per re
 ### Univariate Analysis
 Because I had two relevant columns that I wanted to do univariate analysis on, I did univariate analysis on both, which I have embedded here. 
 
-<iframe src="assets/distribution_of_average_ratings" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/distribution_of_average_ratings.html" width=800 height=600 frameBorder=0></iframe>
 
 
 The 'Distribution of Average Ratings' is a histogram containing the distribution of the ratings, and the 4.75-5.249 bin ratings are way more prevalent than any other rating. This can be interpreted as users seem to give more 4-5 star ratings on recipes when they submit ratings, meaning they generally feel positively about the recipes. 
