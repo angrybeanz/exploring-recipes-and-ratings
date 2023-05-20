@@ -106,7 +106,16 @@ Here, the top 50 rows of the grouped table is shown for reference:
 ---
 
 ## Assessement of Missingness
-The column 'reviews' might be NMAR, because people who leave reviews may feel strongly either negatively or positively and be more inclined to take the time to write something out. On the other hand, people who have more neutral reviews may not feel super strongly and not write a review at all. It's possible to determine is this might be true by collecting additional data about how much time a user spent on that page, how many times they revisited, or other features that would show whether they had a particularly good or bad experience.
+I used the review column as the missingness column to be explored. I showed that the missingness from review was dependent on the minutes column, and the missingness from review was not dependent on the id column. Intuitively, I chose those two parameters because many reviews had comments like 'These were pretty good, but it took forever to bake...', indicating that the amount of time spent baking/cooking the recipe might've contributed to a negative or postiive review, or actually the presence of or lack thereof. Users may be more inclined to leave a review when they have a particularly good or bad experience, in which case longer minutes may have made users more inclined to leave a comment. For the id column, this id refers to the recipe id, and the reviews didn't seem to be dependent on this feature.
+
+I tried by my best to extract the pvalues from the permutation test, however I unfortunately wasn't able to do so due to getting nan values every time I ran the statistic. I explored the possible sources of this, with possible missing values in my condition columns (which was false), my test statistic calculating the wrong thing (false as well), and no non missing values in my missingness column of review (false). I couldn't figure out the reason behind that, thus my p value turned out to be null. 
+
+The plots are supposed to show an overlaid histogram which helps in understanding the distribution of minutes and ids when review is missing and when it's not missing. The minutes histogram unable to tell much information, but if the minutes column were correctly chosen for its own missingness dependency purposes, then the plot would support the notion that the reviews missingness is dependent on minutes. In other words there would be high or moderate counts of the review being missing and lower counts of the review not being missing.
+
+<iframe src="assets/missing_minutes.html" width=800 height=600 frameBorder=0></iframe>
+
+The plot for the distribution of ids when review is missing and when its not missing is displayed below. Lower id numbers (which are arbitrary because they have no ordering purpose) seem to have higher counts of the review not being missing, and stay pretty high throughout the plot. The review being missing is very low and seems to have little to no effect on the review column being missing, as denoted by the blue towards the x axis.
+<iframe src="assets/missing_id.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
